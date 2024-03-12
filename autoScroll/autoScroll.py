@@ -6,11 +6,11 @@ from pynput import keyboard
 browser = webdriver.Chrome()
 
 # Open the webpage
-browser.get("https://www.investopedia.com/what-to-expect-in-the-markets-this-week-8603107")
+browser.get("https://")
 
 # Scroll to the bottom of the webpage gradually
-scroll_increment = 50  #adjust as needed
-scroll_pause_time = 0.5 
+scroll_increment = 10  #adjust as needed
+scroll_pause_time = 1 
 scroll_position = 0
 is_paused = False
 
@@ -45,7 +45,7 @@ except KeyboardInterrupt:
     print("Scrolling stopped manually.")
 
 # Wait before close tab
-time.sleep(10)
+time.sleep(5)
 
 # Close the browser
 browser.quit()
